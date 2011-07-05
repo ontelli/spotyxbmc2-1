@@ -125,6 +125,7 @@ static const dxva2_mode_t dxva2_modes[] = {
 static DWORD UVDDeviceID [] = {
   0x95C0, // ATI Radeon HD 3400 Series (and others)
   0x95C5, // ATI Radeon HD 3400 Series (and others)
+  0x95C4, // ATI Radeon HD 3400 Series (and others)
   0x94C3, // ATI Radeon HD 3410
   0x9589, // ATI Radeon HD 3600 Series (and others)
   0x9598, // ATI Radeon HD 3600 Series (and others)
@@ -579,6 +580,15 @@ bool CDecoder::Open(AVCodecContext *avctx, enum PixelFormat fmt)
   avctx->get_buffer      = GetBufferS;
   avctx->release_buffer  = RelBufferS;
   avctx->hwaccel_context = m_context;
+
+  if (IsL41LimitedATI())
+  {
+#ifdef FF_DXVA2_WORKAROUND_SCALING_LIST_ZIGZAG
+    m_context->workaround |= FF_DXVA2_WORKAROUND_SCALING_LIST_ZIGZAG;
+#else
+    CLog::Log(LOGWARNING, "DXVA - video card with different scaling list zigzag order detected, but no support in libavcodec");
+#endif
+  }
 
   return true;
 }
