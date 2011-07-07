@@ -2475,6 +2475,7 @@
     <ClCompile Include="..\..\xbmc\spotinterface.cpp">
       <Filter>spotyxbmc</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\xbmc\InertialScrollingHandler.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\xbmc\win32\pch.h">
@@ -4967,6 +4968,7 @@
     <ClInclude Include="..\..\appkey.h">
       <Filter>spotyxbmc</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xbmc\InertialScrollingHandler.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\xbmc\win32\XBMC.ico">
