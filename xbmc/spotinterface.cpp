@@ -839,6 +839,9 @@ bool SpotifyInterface::connect(bool forceNewUser)
     m_config.user_agent = "spotify-for-XBMC";
     // Register the callbacks.
     m_config.callbacks = &m_callbacks;
+    m_config.compress_playlists = true;
+    m_config.dont_save_metadata_for_playlists = false;
+    m_config.initially_unload_playlists = false;
 
     m_error = sp_session_create(&m_config, &m_session);
     
