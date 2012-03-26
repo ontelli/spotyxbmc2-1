@@ -217,17 +217,22 @@ Modified files:
 
 * xbmc/cores/paplayer/CodecFactory.cpp
 * xbmc/filesystem/MusicSearchDirectory.cpp
-* xbmc/MusicDatabaseDirectory/DirectoryNodeAlbum.cpp
-* xbmc/MusicDatabaseDirectory/DirectoryNodeArtist.cpp
-* xbmc/MusicDatabaseDirectory/DirectoryNodeOverview.cpp
-* xbmc/MusicDatabaseDirectory/DirectoryNodeSong.cpp
-* xbmc/MusicDatabaseDirectory/DirectoryNodeTop100.cpp
+* xbmc/filesystem/MusicDatabaseDirectory/DirectoryNodeAlbum.cpp
+* xbmc/filesystem/MusicDatabaseDirectory/DirectoryNodeArtist.cpp
+* xbmc/filesystem/MusicDatabaseDirectory/DirectoryNodeOverview.cpp
+* xbmc/filesystem/MusicDatabaseDirectory/DirectoryNodeSong.cpp
+* xbmc/filesystem/MusicDatabaseDirectory/DirectoryNodeTop100.cpp
 * xbmc/music/windows/GUIWindowMusicBase.cpp
-* xbmc/music/Windows/GuiWindowMusicNav.cpp
+* xbmc/music/windows/GUIWindowMusicNav.cpp
+* xbmc/dialogs/GUIDialogContextMenu.h
 * xbmc/music/Makefile
 * xbmc/settings/Settings.cpp
+* xbmc/settings/AdvancedSettings.h
+* xbmc/settings/AdvancedSettings.cpp
+* xbmc/Application.h
 * xbmc/Application.cpp
 * xbmc/GUIInfoManager.cpp
+* configure.in
 
 Buy me a beer?
 -------------
