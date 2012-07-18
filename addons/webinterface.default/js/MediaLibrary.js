@@ -423,7 +423,7 @@ MediaLibrary.prototype = {
           }
           $('#albumDetails' + s_albumid + ' .resultSet').append(trackRow2);
         }
-        $('#albumDetails' + event.data.album.albumid + ' .albumThumb')
+        $('#albumDetails' + s_albumid + ' .albumThumb')
           .append(this.generateThumb('album', albumThumbnail, albumTitle, albumArtist))
           .append($('<div>').addClass('footerPadding'));
         $('#spinner').hide();
